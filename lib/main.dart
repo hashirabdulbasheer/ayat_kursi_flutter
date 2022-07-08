@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'screens/ak_display_screen.dart';
 
+// TODO: Update before release
+const String appVersion = "v1.0.0";
+
 void main() {
   runApp(const MyApp());
 }

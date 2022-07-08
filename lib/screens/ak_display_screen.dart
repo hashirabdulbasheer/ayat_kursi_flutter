@@ -2,6 +2,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 import '../data/data.dart';
+import '../main.dart';
 
 class AKDisplayScreen extends StatefulWidget {
   const AKDisplayScreen({Key? key}) : super(key: key);
@@ -99,7 +100,19 @@ class _AKDisplayScreenState extends State<AKDisplayScreen> {
                     }),
               ),
               const SizedBox(
-                height: 20,
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                    child: Text(
+                      "$appVersion uxQuran",
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  ),
+                ],
               )
             ],
           ),
